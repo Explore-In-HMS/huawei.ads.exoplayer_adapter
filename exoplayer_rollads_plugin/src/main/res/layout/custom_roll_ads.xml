@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/instream_ad_container"
+    android:background="@color/hiad_transparent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/instream_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/demo_16dp"
+        android:background="@drawable/background_textview"
+
+        android:padding="@dimen/demo_8dp"
+        android:text="@string/text_skip_ad"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/instream_count_down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/demo_16dp"
+        android:background="@drawable/background_textview"
+        android:padding="@dimen/demo_8dp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="6S" />
+
+    <TextView
+        android:id="@+id/instream_ad_flag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/demo_16dp"
+        android:background="@drawable/background_textview"
+        android:padding="@dimen/demo_8dp"
+        android:text="@string/text_ad_flag"
+        android:textColor="@android:color/white"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="SmallSp" />
+
+    <ImageView
+        android:id="@+id/instream_why_this_ad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/demo_8dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/app_whythisad_info"
+        app:layout_constraintBottom_toBottomOf="@+id/instream_ad_flag"
+        app:layout_constraintStart_toEndOf="@+id/instream_ad_flag"
+        app:layout_constraintTop_toTopOf="@+id/instream_ad_flag" />
+
+    <ImageView
+        android:id="@+id/mic_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/demo_8dp"
+        android:src="@drawable/ad_mic_on"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/instream_ad_flag"
+        app:layout_constraintStart_toEndOf="@+id/instream_why_this_ad"
+        app:layout_constraintTop_toTopOf="@+id/instream_ad_flag" />
+
+    <TextView
+        android:id="@+id/instream_call_to_action"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/demo_16dp"
+        android:background="@drawable/background_textview"
+        android:padding="@dimen/demo_8dp"
+        android:text="@string/text_learn_more"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
