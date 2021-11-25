@@ -78,7 +78,7 @@ Adapter implementation code as follows.
 
 ```java
 
-  new HwExoPlayerAdapter.Builder(DemoActivity.this, playerView, "testy3cglm3pj0")
+  new HwExoPlayerAdapter.Builder(Context context, PlayerView playerview, "Huawei Roll ad unit id")
                 .setAdItem(Placement.PREROLL, true)
                 .setAdItem(Placement.FIRST_QUARTILE, false)
                 .setAdItem(Placement.MIDDLE, true)
