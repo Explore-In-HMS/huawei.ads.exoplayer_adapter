@@ -56,10 +56,10 @@ In the app-level build.gradle, include following dependencies and enable multide
 ```groovy
 dependencies {
     ...
-    'com.github.Explore-In-HMS:huawei.ads.exoplayer_adapter:v1.0.0'
-    'com.google.android.exoplayer:exoplayer:<any version>'
-    'androidx.multidex:multidex:2.0.1'
-    'com.huawei.hms:ads:3.4.49.301' 
+   implementation 'com.github.Explore-In-HMS:huawei.ads.exoplayer_adapter:v1.0.0'
+   implementation 'com.google.android.exoplayer:exoplayer:<any version>'
+   implementation 'androidx.multidex:multidex:2.0.1'
+   implementation 'com.huawei.hms:ads:3.4.49.301' 
 }
 defaultConfig {
     multiDexEnabled true   // enable multidex for the project
