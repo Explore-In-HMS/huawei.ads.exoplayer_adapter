@@ -8,6 +8,7 @@
 
 In this documentation we explained how to use Huawei-Exoplayer adapter in android.
 
+
 Click [here](https://medium.com/huawei-developers/how-to-use-huawei-roll-ads-with-exoplayer-34ecbe8a5b86) to check the medium post about this adapter.
 
 # How to start?
